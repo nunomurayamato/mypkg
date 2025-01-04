@@ -64,5 +64,5 @@
 - このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます.
 - このパッケージのテストに利用したコンテナは下記のリンクのものを、本人の許可を得て使用しています.
  - ryuichiueda/ubuntu22.04-ros2:latest
-- © 2025 yamato nunomuri
+- © 2025 yamato nunomura
 
