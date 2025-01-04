@@ -21,6 +21,7 @@
    ```
    ```  
    $ cd ~/ros2_ws
+   ```
    ```  
    $ colcon build
    ```
@@ -39,16 +40,16 @@
 ## 実行例
 
 - 送信側
--  `
+-  ```
    [INFO] [1736017209.059876758] [memory_publisher]: Memory Publisher Node has been started.   
    [INFO] [1736017210.055585014] [memory_publisher]: Publishing memory usage: 42.27 MB  
    [INFO] [1736017211.055718480] [memory_publisher]: Publishing memory usage: 42.27 MB  
    [INFO] [1736017212.055796343] [memory_publisher]: Publishing memory usage: 42.27 MB  
    [INFO] [1736017213.055281600] [memory_publisher]: Publishing memory usage: 42.27 MB
-   `
+   ```
 
 - 受信側
--  `
+-  ```
    data: 42.47265625  
 
    data: 42.47265625  
@@ -56,7 +57,7 @@
    data: 42.47265625  
 
    data: 42.47265625
-   `
+   ```
 
 
 
