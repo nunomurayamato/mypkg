@@ -13,17 +13,23 @@
 ## 使用方法
 
 - ワークスペースにパッケージをクローンし、ビルドします。
--  `$ cd ~/ros2_ws/src` 
-   `$ git clone https://github.com/nunomurayamato/mypkg.git`  
-   `$ cd ~/ros2_ws`  
-   `$ colcon build`
+-  ```
+   $ cd ~/ros2_ws/src
+   ```
+   ``` 
+   $ git clone https://github.com/nunomurayamato/mypkg.git
+   ```  
+   $ cd ~/ros2_ws
+   ```  
+   $ colcon build
+   ```
    
 
 - 送信側
-- `$ ros2 run mypkg Memorypublisher`
+- ```$ ros2 run mypkg Memorypublisher```
 
 - 受信側  
-- `$ ros2 topic echo /memory_usage`
+- ```$ ros2 topic echo /memory_usage```
 
 ## 実行例
 
