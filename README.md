@@ -10,7 +10,7 @@
 ## ノード概要
 
 - このパッケージは　メモリ使用を定期的にパブリッシュする`memorypublisher` ノードで構成されています。 
-- トピック名　memory usage
+- トピック名　`memory usage`
 
 ## 使用方法
 
