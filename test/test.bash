@@ -12,4 +12,4 @@ source $dir/.bashrc
 timeout 10 ros2 launch mypkg memorypublisher.launch.py > /tmp/mypkg.log
 
 cat /tmp/mypkg.log |
-grep '40.0078125'
+grep "40.0078125"
