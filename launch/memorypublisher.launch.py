@@ -6,9 +6,9 @@ import launch_ros.actions
 
 def generate_launch_description():
 
-    Memorypublisher = launch_ros.actions.Node(
+    memorypublisher = launch_ros.actions.Node(
             package='mypkg',
-            executable='Memorypublisher',
+            executable='memorypublisher',
             )
 
-    return launch.LaunchDescription([Memorypublisher])
+    return launch.LaunchDescription([memorypublisher])

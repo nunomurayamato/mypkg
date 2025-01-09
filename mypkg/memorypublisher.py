@@ -14,14 +14,13 @@ class MemoryPublisher(Node):
         self.publisher_ = self.create_publisher(Float64, 'memory_usage', 10)
         self.timer = self.create_timer(1.0, self.publish_memory_usage)
         self.process = psutil.Process(os.getpid())  
-        self.get_logger().info('Memory Publisher Node has been started.')
+        
 
     def publish_memory_usage(self):
         memory_usage = self.process.memory_info().rss / (1024 * 1024)  
         msg = Float64()
         msg.data = memory_usage
         self.publisher_.publish(msg)
-        self.get_logger().info(f'Publishing memory usage: {memory_usage:.2f} MB')
 
 
 def main(args=None):
