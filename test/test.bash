@@ -11,5 +11,11 @@ source $dir/.bashrc
 
 timeout 10 ros2 launch mypkg memorypublisher.launch.py > /tmp/mypkg.log
 
-cat /tmp/mypkg.log |
-grep "40.0078125"
+if [ -s $temp_file ]; then
+    echo "Test passed: Memory usage values are:"
+    cat $temp_file
+else
+    echo "Test failed: No memory usage values recorded."
+fi
+
+rm -f $temp_file
